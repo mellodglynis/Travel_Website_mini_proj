@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enravel - Your Travel Companion</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f9f3f3;
+            color: #333;
+        }
+
+        header {
+            background-color: #ffffff;
+            padding: 20px;
+            text-align: center;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 3em;
+            color: #009933;
+            font-family: 'Helvetica Neue', sans-serif;
+        }
+
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #282828;
+            padding: 10px 0;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        nav a {
+            color: #ffffff;
+            margin: 0 20px;
+            text-decoration: none;
+            font-size: 1.2em;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            color: #04f93d;
+        }
+
+        .content {
+            padding: 40px;
+            text-align: center;
+        }
+
+        .section-title {
+            font-size: 2.5em;
+            margin-bottom: 20px;
+            border-bottom: 3px solid #060f08;;
+            display: inline-block;
+            color:#009933;
+            
+        }
+
+        .destination-section {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .destination, .review, .top-game {
+            margin: 70px;
+            background-color: #f9f8f8;
+            padding: 30px;
+            border-radius: 50px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            width: 450px;
+            text-align: left;
+        }
+
+        .destination img {
+            width: 100%;
+            border-radius: 12px;
+            margin-bottom: 15px;
+        }
+
+        .destination h3, .review h3, .top-game h3 {
+            margin-top: 0;
+            color: #0e080a;
+            font-size: 1.5em;
+        }
+
+        .destination p, .review p, .top-game p {
+            color: #555;
+            line-height: 1.6;
+        }
+
+        footer {
+            background-color: #1e1e1e;
+            text-align: center;
+            padding: 15px;
+            margin-top: 40px;
+            font-size: 1em;
+            color: #f9f0f0;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>ENRAVEL</h1>
+</header>
+
+<nav>
+    <a href="#Your Profile">Your Profile</a>
+    <a href="#Search">Search</a>
+    <a href="#Top Destinations">Top Destinations</a>
+    <a href="#Services">Services</a>
+    <a href="#Blog">Blog</a>
+    <a href="#faq">FAQ</a>
+    <a href="#about">About</a>
+</nav>
+
+<div class="content">
+    <section id="Top Destinations">
+        <h2 class="section-title">Top Destinations</h2>
+
+        <div class="destination-section">
+            <div class="destination">
+                <img src="https://images.pexels.com/photos/688660/pexels-photo-688660.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Forest destination">
+                <h3>Winter is coming!</h3>
+                <p>Gear up for trips in the snow. Discover breathtaking winter destinations and start planning your adventure.</p>
+            </div>
+
+            <div class="review">
+                <img src="https://images.pexels.com/photos/574324/pexels-photo-574324.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Mumbai">
+                <h3>Hot Visits</h3>
+                <p>Go get that summer tan</p>
+            </div>
+        </div>
+    </section>
+</div>
+
+<footer>
+    <p>&copy; 2024 Enravel. All rights reserved.</p>
+</footer>
+
+</body>
+</html>

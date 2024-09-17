@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel Website Signup</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: url("enravel\ gate\ 2.jpg") no-repeat center center fixed;
+            background-size: cover;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        
+        .container {
+            background: rgba(255, 250, 250, 0.3); /* Slightly transparent white background */
+            padding: 2em;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            width: 100%;
+            max-width: 400px;
+        }
+        h2 {
+            margin-bottom: 1em;
+            text-align: center;
+        }
+        label {
+            display: block;
+            margin-bottom: 0.5em;
+            font-weight: bold;
+        }
+        input[type="text"],
+        input[type="email"],
+        input[type="password"] {
+            width: 100%;
+            padding: 0.8em;
+            margin-bottom: 1em;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+        }
+        input[type="submit"] {
+            background-color: #28a745;
+            color: #fff;
+            padding: 0.8em;
+            border: none;
+            border-radius: 10px;
+            cursor: pointer;
+            font-size: 1em;
+        }
+        input[type="submit"]:hover {
+            background-color: #218838;
+        }
+        .error-message {
+            color: red;
+            font-size: 0.9em;
+            text-align: center;
+        }
+        
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h2>Sign Up</h2>
+        <form action="/submit_signup" method="post">
+            <label for="First name">First Name</label>
+            <input type="text" id="name"  placeholder="RIO" name="First name" required>
+            
+            <label for="Last name">Last name</label>
+            <input type="text" id="last name" placeholder="DELTA" name="Last name" required>
+
+            <label for="email">Email Address</label>
+            <input type="email" id="email" placeholder="xxx@gmail.com" name="email" required>
+            
+            <label for="Mobile number">Mobile number</label>
+            <input type="number" id="phone" placeholder="+00-0123-456789" pattern="[0-9]{3}-[0-9]{4}-[0-9]{5}" name="number" required>
+            <br><br>
+
+            <label for="password">Password</label>
+            <input type="password" id="password" placeholder="password" name="password" required>
+          
+            <label for="Confirm Password">Confirm Password</label>
+            <input type="text" id="password" placeholder="Confirm password" name="Confirm Password" required>
+            
+            <label for="Date of birth">Date of Birth:</label>
+            <input type="date" id="date" name="Date" required>
+
+           <br><br>
+            <input type="submit" value="Sign Up">
+            <p class="login-link">Already have an account? <a href="#" style="color: beige;">Login here</a></p>
+        </form>
+    </div>
+    
+</body>
+
+</html>
